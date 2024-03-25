@@ -1,0 +1,23 @@
+:root{
+  font-size: 62.5%;
+}
+
+ol{
+  margin-bottom: 2rem;
+}
+
+body{
+  font-size: 1.4rem;
+}
+
+li{
+  line-height: 2rem;
+}
+
+h1{
+  font-size: 3rem;
+}
+
+strong{
+  font-size: 2rem;
+}
