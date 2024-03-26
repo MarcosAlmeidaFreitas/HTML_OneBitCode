@@ -7,8 +7,52 @@
 </head>
 <body>
   <h1>Criação de tabelas</h1>
+  <table border="1">
+    <tr>
+      <th>nome</th>
+      <th>email</th>
+      <th>idade</th>
+    </tr>
+    <tr>
+      <td>maximiliun</td>
+      <td>maximilum@gmail.com</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>jubriscreuda</td>
+      <td>jubriscreuda@gmail.com</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>marina</td>
+      <td>marinadomato@hotmail.com</td>
+      <td>42</td>
+    </tr>
+  </table>
+  
+  <!-- Usado para criar uma linha para poder separar o conteúdo -->
+  <hr>
+
+    <h2>Tabelas com Células Personalizadas</h2>
   <table>
-    
+    <thead> <!-- Usado simplesmente para indicar que aqui e o cabeçalho não altera nada -->
+      <tr>
+        <th colspan="2">Informações Pessoais</th>
+        <th>Contato</th>
+      </tr>
+    </thead>
+
+    <tbody> <!-- Usado simplesmente para indicar que aqui e o corpo (conteúdo) não altera nada -->
+      <tr>
+        <td>Nome</td>
+        <td>João</td>
+        <td rowspan="2">Telefone: 12345623</td>
+      </tr>
+      <tr>
+        <td>Idade:</td>
+        <td>30</td>
+      </tr>
+    </tbody>
   </table>
 </body>
 </html>
