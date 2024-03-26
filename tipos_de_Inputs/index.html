@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inputs</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <form>
+    <div id="radio">
+      <label>Gênero</label>
+      
+      <input type="radio" name="genero" id="masculino" value="m">
+      <label for="masculino">Masculino</label>
+
+      <input type="radio" name="genero" id="feminino" value="f">
+      <label for="feminino">feminino</label>
+    </div>
+
+    <div id="check">
+      <label>Interesses:</label>
+      
+      <input type="checkbox" name="interesses" id="backend" value="backend">
+      <label for="backend">Backend</label>
+
+      <input type="checkbox" name="interesses" id="frontend" value="frontend">
+      <label for="frontend">Frontend</label>
+
+      <input type="checkbox" name="interesses" id="mobile" value="mobile">
+      <label for="mobile">Mobile</label>
+    </div>
+
+    <div id="data">
+      <!-- Campo de data -->
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input type="date" id="dataNascimento" name="dataNascimento">
+    </div>
+
+    <div id="upload_de_arquivos">
+      <!-- Campo de arquivo (upload de arquivos) -->
+      <label for="fotoPerfil">Foto de Perfil:</label>
+      <input type="file" id="fotoPerfil" name="fotoPerfil">
+      <br><br>
+    </div>
+    
+    <div id="campoSelecao">
+      <label for="situacao">Selecione o estágio da sua carreira: </label>
+      <select name="situacao" id="situacao">
+        <option value="" disabled selected>Clique e selecione uma das opções...</option>
+        <option value="estudante">Estudando para ser um programador</option>
+        <option value="estagiario">Atuando na área como estagiário / trainee</option>
+        <option value="junior">Atuando como desenvolvedor junior</option>
+        <option value="pleno">Atuando como desenvolvedor pleno</option>
+        <option value="senior">Atuando como desenvolvedor senior</option>
+      </select>
+    </div>
+    
+    <br><br>
+    
+    <div id="text_area">
+      <label for="sobre">Sobre mim</label>
+      <textarea name="sobre" id="sobre" cols="30" rows="10" resize="none"
+       placeholder="Fale sobre você..."></textarea>
+    </div>
+    
+    <br><br>
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
