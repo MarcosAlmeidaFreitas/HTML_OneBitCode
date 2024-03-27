@@ -3,24 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="module" src="script.js" defer></script>
   <title>Formulário de cadastro</title>
+  <script type="module" src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Formulário de Inscrição</h1>
   <form>
     <label for="name">Nome:</label>
-    <input type="text" id="name" name="nome">
-
+    <input type="text" id="name" name="nome" required>
+  
     <label for="email">Email:</label>
-    <input type="email" id="email" name="email">
-
+    <input type="email" id="email" name="email" required>
+  
     <label for="tel">WhatsApp:</label>
     <input type="tel" id="tel" placeholder="(xx) xxxxx-xxxx" 
-      maxlength="15"
+        maxlength="15" required
     >
-    
+    <label>Selecione a área de atuação:</label>
+    <div id="radio">
+      <div>
+        <input type="radio" name="atuacao" id="desenvolvimento" value="desenvolvimento">
+        <label for="desenvolvimento">Desenvolvimento</label>
+      </div>
+      <div>
+        <input type="radio" name="atuacao" id="qualidade" value="qualidade">
+        <label for="qualidade">Quality Assurance (QA)</label>
+      </div>
+
+      <div>
+        <input type="radio" name="atuacao" id="analise" value="analise">
+        <label for="analise">Analise de Dados</label>
+      </div>
+
+      <div>
+        <input type="radio" name="atuacao" id="infraestrutura" value="infraestrutura">
+        <label for="infraestrutura">Infraestrutura</label>
+      </div>
+    </div>
+    <label for="observacoes">Escreva alguma observação:</label>
+    <textarea name="obs" id="observacoes" cols="10" rows="7" 
+      placeholder="Observações..."></textarea>
     <button type="submit">Enviar</button>
+    
+    <input type="checkbox" name="" id="">  
   </form>
 </body>
 </html>
